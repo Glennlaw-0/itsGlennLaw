@@ -10,10 +10,11 @@ html {
   // This defines what 1rem is
   font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
   box-sizing: border-box;
+  background-color: $background-color;
 
   @media #{$mq-620-down} {
     // width < 620?
-    font-size: 50%; //1 rem = 8px, 8/16 = 50%
+    font-size: 112%; //1 rem = 8px, 8/16 = 50%
   }
 
   @media #{$mq-760-up} {
@@ -28,7 +29,7 @@ html {
 }
 
 body {
-  background-color: $background-color;
+  width: 100%;
 }
 
 ::selection {

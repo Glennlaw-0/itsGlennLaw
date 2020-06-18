@@ -14,12 +14,11 @@
     "css",
     "javascript"
   ],
-  "author": "@thecodercoder",
+  "author": "Glenn Law",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/thecodercoder/frontend-boilerplate/issues"
   },
-  "homepage": "https://github.com/thecodercoder/frontend-boilerplate#readme",
   "devDependencies": {
     "autoprefixer": "^9.7.0",
     "cssnano": "^4.1.10",

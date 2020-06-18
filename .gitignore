@@ -1,2 +1,6 @@
-node_modules/
-dist/
+/.git
+/.gitignore
+/app
+/node_modules
+/package-lock.json
+/README.md
