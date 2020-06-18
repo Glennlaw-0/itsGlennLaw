@@ -1,0 +1,37 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  // This defines what 1rem is
+  font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
+  box-sizing: border-box;
+
+  @media #{$mq-620-down} {
+    // width < 620?
+    font-size: 50%; //1 rem = 8px, 8/16 = 50%
+  }
+
+  @media #{$mq-760-up} {
+    // width great/equal 750?
+    font-size: 50%; //1 rem = 8px, 8/16 = 50%
+  }
+
+  @media #{$mq-1000-up} {
+    //width great/equal to 1000?
+    font-size: 75%;
+  }
+}
+
+body {
+  background-color: $background-color;
+}
+
+::selection {
+  background-color: $background-color;
+  color: $primary-font;
+}
