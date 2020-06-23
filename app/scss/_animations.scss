@@ -1,11 +1,9 @@
+// for each link
+
 @keyframes moveInLeft {
   0% {
     opacity: 0;
-    transform: translateX(-100rem);
-  }
-
-  80% {
-    transform: translateX(-30rem);
+    transform: translateX(-135rem);
   }
 
   100% {
@@ -17,11 +15,7 @@
 @keyframes moveInRight {
   0% {
     opacity: 0;
-    transform: translateX(30rem);
-  }
-
-  80% {
-    transform: translateX(5rem);
+    transform: translateX(80.5rem);
   }
 
   100% {
@@ -30,7 +24,32 @@
   }
 }
 
-@keyframes phaseIn {
+// for footer Text
+
+@keyframes text-focus-in {
   0% {
+    filter: blur(12px);
+    opacity: 0;
   }
+  100% {
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+// for logo icon
+
+@keyframes rotate-logo {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+//animation utility classes
+
+.text-focus-in {
+  animation: text-focus-in 3.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }

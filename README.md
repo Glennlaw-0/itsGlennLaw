@@ -1,10 +1,6 @@
-# Front-end Boilerplate using Sass and Gulp 4
+# Webpage for https://itsGlennLaw.com portfolio
 
-Using a set of boilerplate files when you're starting a website project can be a huge time-saver. Instead of having to start from scratch or copy and paste from previous projects, you can get up and running in just a minute or two.
-
-I wanted to share my own boilerplate that I use for simple front-end websites that use HTML, SCSS, and JavaScript. And I'm using Gulp 4 to compile, prefix, and minify my files.
-
-I also wrote a rather detailed walkthrough on how to get up and running with Gulp 4, as well as migration tips from Gulp 3.
+I will be using this webpage styling for my first portfolio. You will find sections, about me, my portfolio, blog, and my contact details. Please feel free to reach out to me for any questions or if you'd like to use this layout design. Thank you for taking the time to look at my website.
 
 ## Quickstart guide
 
