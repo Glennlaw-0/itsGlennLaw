@@ -1,0 +1,15 @@
+.main__privacy,
+.main__terms,
+.main__disclaimer {
+  position: relative;
+  padding: 2rem;
+  line-height: 1.7;
+  color: $white-font;
+}
+
+section.privacy > p,
+section.terms > p,
+section.disclaimer > p {
+  font-size: 100%;
+  padding: 20px 0;
+}

@@ -1,0 +1,81 @@
+@mixin absCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.section__title-small {
+  font-family: 'fira sans', sans-serif;
+  font-size: 1.5rem;
+
+  &-green {
+    color: $ngreen-font;
+  }
+
+  &-blue {
+    color: $dblue-font;
+  }
+
+  &-weird {
+    color: $weird-font;
+  }
+}
+
+.section__title-medium {
+  font-family: 'fira sans', sans-serif;
+  font-size: 2rem;
+
+  &-green {
+    color: $ngreen-font;
+  }
+
+  &-blue {
+    color: $dblue-font;
+  }
+
+  &-weird {
+    color: $weird-font;
+  }
+
+  @media #{$mq-425-up} {
+    font-size: 2.5rem;
+  }
+
+  @media #{$mq-760-up} {
+    font-size: 3.5rem;
+  }
+}
+
+.section__title-large {
+  font-family: 'fira sans', sans-serif;
+  font-size: 2.5rem;
+
+  &-green {
+    color: $ngreen-font;
+  }
+
+  &-blue {
+    color: $dblue-font;
+  }
+
+  &-weird {
+    color: $weird-font;
+  }
+
+  @media #{$mq-425-up} {
+    font-size: 3.5rem;
+  }
+
+  @media #{$mq-760-up} {
+    font-size: 5.5rem;
+  }
+}
+
+.load__in {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: #37b088;
+  z-index: 2;
+}

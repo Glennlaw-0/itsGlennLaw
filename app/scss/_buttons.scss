@@ -1,0 +1,78 @@
+// transition: 0.5s ease-in; <--- Find a way to add this in JavaScript
+
+.btn {
+  border: none;
+  font-family: 'fira sans', serif;
+  padding: 0.3rem 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  &--green {
+    background-color: transparent;
+    border: 3px $weird-green solid;
+    color: $white-font;
+
+    &:hover {
+      background-color: $neon-green;
+      color: $weird-font;
+    }
+  }
+
+  &--white {
+    background-color: transparent;
+    border: 3px $white solid;
+    color: $weird-font;
+
+    &:hover {
+      background-color: $neon-green;
+      color: $dblue-font;
+    }
+  }
+}
+
+.hamburger {
+  padding: 15px;
+  display: inline-block;
+  color: inherit;
+  text-transform: none;
+  background: none;
+  margin: 0;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  -webkit-transition: all 0.15s ease-in;
+  transition: all 0.15s ease-in;
+
+  &:focus {
+    outline: $weird-font;
+  }
+
+  @media #{$mq-425-up} {
+    display: none;
+  }
+}
+
+.hamburger__box {
+  width: 29px;
+  height: 25px;
+  display: inline-block;
+  position: relative;
+}
+
+.hamburger__inner {
+  width: 30px;
+  height: 3px;
+  display: block;
+  background-color: $white-font;
+
+  &::after {
+    content: '';
+    width: 15px;
+    height: 3px;
+    position: absolute;
+    display: block;
+    bottom: 11px;
+    background-color: $white-font;
+  }
+}

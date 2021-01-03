@@ -1,0 +1,264 @@
+//Header & content inside
+
+.logo-link {
+  height: 63px;
+  width: 63px;
+  position: absolute;
+  left: 28px;
+  top: 36px;
+
+  @media #{$mq-760-up} {
+    width: 75px;
+    height: 75px;
+    position: relative;
+    top: 58px;
+  }
+}
+
+.logo__icon {
+  min-width: 100%;
+  max-width: 100%;
+}
+
+.logo__name {
+  width: 42%;
+
+  @media #{$mq-425-up} {
+    width: 25%;
+  }
+}
+
+.background-logo__name {
+  @include absCenter;
+  z-index: 3;
+  width: 60%;
+}
+
+// ------------------------------------------------
+
+// section About
+
+.about__section {
+  color: $white-font;
+  position: relative;
+  height: 100%;
+  width: 100%;
+
+  @media #{$mq-425-up} {
+    width: 67%;
+  }
+}
+
+.about__content {
+  width: 100%;
+  margin-top: 10px;
+
+  @media #{$mq-425-up} {
+    height: 100%;
+    padding: 0;
+  }
+}
+
+.about__header {
+  margin-bottom: 20px;
+  color: $white-font;
+}
+
+.about__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style-position: inside;
+}
+
+.list__item {
+  list-style: none;
+}
+
+// ------------------------------------------------
+// Section Contact
+
+.consultation__section {
+  color: $white-font;
+  position: relative;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+
+  @media #{$mq-425-up} {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.consultation__content {
+  @media #{$mq-425-up} {
+    height: 100%;
+    width: 70%;
+  }
+}
+
+.consultation__text {
+  @media #{$mq-425-up} {
+    padding-top: 65px;
+    width: 80%;
+  }
+
+  @media #{$mq-425-down} {
+    display: none;
+  }
+}
+
+.form__container {
+  @media #{$mq-425-up} {
+    height: 100%;
+    width: 50%;
+  }
+}
+
+// Form given own scss file
+
+// ------------------------------------------------
+// section portfolio
+
+.portfolio {
+  width: 100%;
+  height: 100%;
+  // background-color: white;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 19px;
+  grid-row-gap: 19px;
+}
+
+.portfolio--work,
+.work__1,
+.work__2,
+.work__3,
+.work__4 {
+  background: #c4c4c4;
+  position: relative;
+}
+
+.work__1 {
+  grid-area: 1 / 1 / 3 / 3;
+}
+.work__2 {
+  grid-area: 1 / 3 / 3 / 5;
+}
+.work__3 {
+  grid-area: 3 / 1 / 5 / 3;
+}
+.work__4 {
+  grid-area: 3 / 3 / 5 / 5;
+}
+
+// ------------------------------------------------
+// Footer Styling
+
+.logo-link__footer {
+  height: 50px;
+  width: 50px;
+  display: block;
+
+  @media #{$mq-760-up} {
+    width: 35px;
+    height: 35px;
+    display: block;
+  }
+}
+
+.social__pack {
+  width: 178px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.social__platforms {
+  width: 178px;
+  display: flex;
+  justify-content: space-around;
+  overflow: hidden;
+}
+
+.svg.social__link {
+  transition: 0.3s ease-in;
+
+  &:hover,
+  &:active {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%)
+      hue-rotate(162deg) brightness(105%) contrast(103%);
+  }
+}
+
+.footer__link {
+  &:link {
+    font-family: 'fira sans', serif;
+    color: $weird-font;
+    text-decoration: none;
+    margin-left: 1.4rem;
+    cursor: pointer;
+  }
+
+  &:visited {
+    color: $weird-green;
+  }
+
+  &:hover,
+  &:active {
+    color: $white;
+  }
+}
+
+// Main Links
+
+.phone__link {
+  &:link {
+    font-family: 'Fira sans condensed', serif;
+    color: $weird-font;
+    text-decoration: none;
+  }
+
+  &:visited {
+    color: $white-font;
+  }
+
+  &:hover,
+  &:active {
+    color: $weird-green;
+  }
+}
+
+.nav__link {
+  &:link,
+  &:visited {
+    font-family: 'fira sans', serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: transform 0.1s, opacity 0.1s;
+  }
+
+  &:hover,
+  &:active {
+    color: $white-font;
+  }
+
+  &-green {
+    color: $weird-font;
+  }
+
+  &-white {
+    color: $white-font;
+  }
+}
+
+//======================
+
+.temp {
+  @include absCenter;
+}
