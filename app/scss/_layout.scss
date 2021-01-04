@@ -1,22 +1,38 @@
-.header {
-  width: 100%;
-
-  //   &__logo-box {  //incase I need edit logo box & logo
-  //   }
+body {
+  height: 100%;
+  min-height: 100%;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
 }
 
-.main__body {
-  width: 100%;
-  height: 45.2rem;
+::selection {
+  background-color: $ngreen-font;
+  color: $dblue-font;
+}
+
+.header {
+  grid-area: 1 / 2 / 2 / 12;
+  display: flex;
+  justify-content: space-between;
+}
+
+main.main {
+  grid-area: 2 / 2 / 5 / 12;
+  display: flex;
+  justify-content: center;
+}
+
+main.container {
+  grid-area: 2 / 2 / 5 / 12;
 }
 
 .footer {
-  margin: auto;
-  height: auto;
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1fr;
-  grid-column-gap: 50px;
-  grid-row-gap: 0px;
+  grid-area: 5 / 2 / 6 / 12;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }

@@ -1,4 +1,4 @@
-# Webpage for https://itsGlennLaw.com portfolio
+# Webpage for <https://itsGlennLaw.com> portfolio
 
 I will be using this webpage styling for my first portfolio. You will find sections, about me, my portfolio, blog, and my contact details. Please feel free to reach out to me for any questions or if you'd like to use this layout design. Thank you for taking the time to look at my website.
 
@@ -9,7 +9,7 @@ I will be using this webpage styling for my first portfolio. You will find secti
 - Run `npm install`
 - Run `gulp` to run the default Gulp task
 
-In this proejct, Gulp is configured to run the following functions:
+In this project, Gulp is configured to run the following functions:
 
 - Compile the SCSS files to CSS
 - Autoprefix and minify the CSS file
