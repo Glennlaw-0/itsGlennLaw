@@ -1,4 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+/* fira-sans-regular - latin */
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../dist/font/fira-sans-v10-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+    url('../dist/font/fira-sans-v10-latin-regular.eot?#iefix')
+      format('embedded-opentype'),
+    /* IE6-IE8 */ url('../dist/font/fira-sans-v10-latin-regular.woff2')
+      format('woff2'),
+    /* Super Modern Browsers */
+      url('../dist/font/fira-sans-v10-latin-regular.woff') format('woff'),
+    /* Modern Browsers */ url('../dist/font/fira-sans-v10-latin-regular.ttf')
+      format('truetype'),
+    /* Safari, Android, iOS */
+      url('../dist/font/fira-sans-v10-latin-regular.svg#FiraSans') format('svg'); /* Legacy iOS */
+}
 
 body {
   font-family: 'Fira Sans', sans-serif;

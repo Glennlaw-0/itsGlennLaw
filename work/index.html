@@ -30,7 +30,9 @@
     <!-- End Google Tag Manager -->
 
     <!-- CSS File -->
-    <link rel="stylesheet" href="./dist/style.css" />
+    <link rel="stylesheet" href="../dist/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
 </head>
 
 <body class="stage" data-barba="wrapper">
@@ -48,9 +50,10 @@
     <header class="header">
 
         <!-- logo header box -->
-        <a class="logo-link" href="http://itsglennlaw.com">
+        <a class="logo-link" href="http://itsglennlaw.com" alt="itsGlennLaw Logo">
             <svg class="logo__icon logo__icon-animated" viewbox="0 0 87 86" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
+                xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="uniqueLogoID">
+                <title id="uniqueLogoID">The Logo itsGlennlaw.com</title>
                 <g id="PrototypeLogoIcon">
                     <g id="inner__logo">
                         <path id="Vector_2 "
@@ -81,8 +84,7 @@
                             fill="#bfe99e" />
                     </g>
                 </g>
-            </svg>
-        </a>
+            </svg> </a>
 
         <nav>
             <ul class="nav__list">
@@ -145,20 +147,21 @@
     <footer class="footer">
         <section class="social__pack">
             <div class="social__platforms">
-                <a href="https://www.twitter.com/itsglennlaw" target="_blank"><img
+                <a href="https://www.twitter.com/itsglennlaw" target="_blank" rel="noreferrer"><img
                         src="/dist/imgs/socialpack/Twitter.svg" class="svg social__link"
                         alt="Glenn Law's Twitter Page" /></a>
 
-                <a href="https://www.linkedin.com/in/glenn-law" target="_blank"><img
+                <a href="https://www.linkedin.com/in/glenn-law" target="_blank" rel="noreferrer"><img
                         src="/dist/imgs/socialpack/Linkedin.svg" class="svg social__link"
                         alt="Glenn Law's Linkedin Page" /></a>
 
-                <a href="https://www.instagram.com/itsGlennLaw" target="_blank"><img
+                <a href="https://www.instagram.com/itsGlennLaw" target="_blank" rel="noreferrer"><img
                         src="/dist/imgs/socialpack/Instagram.svg" class="svg social__link"
                         alt="Glenn Law's Instagram Page" /></a>
 
-                <a href="https://github.com/Glennlaw-0" target="_blank"><img src="/dist/imgs/socialpack/Github.svg"
-                        class="svg social__link" alt="Glenn Law's Github Page" /></a>
+                <a href="https://github.com/Glennlaw-0" target="_blank" rel="noreferrer"><img
+                        src="/dist/imgs/socialpack/Github.svg" class="svg social__link"
+                        alt="Glenn Law's Github Page" /></a>
             </div>
         </section>
 
@@ -172,7 +175,7 @@
         crossorigin="anonymous"></script>
     <script src="https://unpkg.com/@barba/core@2.9.7/dist/barba.umd.js" crossorigin="anonymous"></script>
     <!-- custom JavaScript File -->
-    <script src="../dist/all.js?cb=1607458553795" charset="utf-8"></script>
+    <script src="../dist/all.js?cb=1611888214538" charset="utf-8"></script>
 </body>
 
 </html>

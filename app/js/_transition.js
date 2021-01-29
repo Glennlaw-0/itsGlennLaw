@@ -154,7 +154,7 @@ function loadAnimations() {
       stagger: 0.1,
       ease: 'power3.in',
     })
-    .from('.about__stack h3', {
+    .from('.about__stack h2', {
       opacity: 0,
       stagger: 0.1,
       ease: 'power3.in',

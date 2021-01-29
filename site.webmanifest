@@ -15,6 +15,6 @@
   ],
   "theme_color": "#1d303f",
   "background_color": "#1d303f",
-  "start_url": "https://itsglennlaw.com",
+  "start_url": "index.html",
   "display": "standalone"
 }
