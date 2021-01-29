@@ -33,19 +33,36 @@
     <link rel="stylesheet" href="./dist/style.css" />
 </head>
 
-<body class="stage" data-barba="wrapper">
+<body class="stage">
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T5SVNKW" height="0" width="0"
             style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    <svg class="shape-overlays" viewbox="0 0 100 100" preserveaspectratio="none">
-        <path class="shape-overlays__path"></path>
-        <path class="shape-overlays__path"></path>
-        <path class="shape-overlays__path"></path>
-    </svg>
+
 
     <!-- header section -->
     <header class="header">
+
+        <svg class="shape-overlays" viewbox="0 0 100 100" preserveaspectratio="none">
+            <path class="shape-overlays__path"></path>
+            <path class="shape-overlays__path"></path>
+            <path class="shape-overlays__path"></path>
+        </svg>
+        <!-- Mobile Global menu -->
+        <div class="global-menu">
+            <div id="overlay-menu" class="global-menu__wrap">
+                <a href="/" class="global-menu__item global-menu__item--demo-3 nav__link nav__link-green">Home</a>
+                <a href="/work/" class="global-menu__item global-menu__item--demo-3 nav__link nav__link-green">Work</a>
+                <a a href="mailto:glenn@itsglennlaw.com"
+                    class="global-menu__item global-menu__item--demo-3 nav__link nav__link-green">Contact</a>
+                <a href="/disclaimer/"
+                    class="global-menu__item global-menu__item--demo-3 nav__link nav__link-green">Disclaimer</a>
+                <a href="/privacy/"
+                    class="global-menu__item global-menu__item--demo-3 nav__link nav__link-green">Privacy</a>
+                <a href="/terms/"
+                    class="global-menu__item global-menu__item--demo-3 nav__link nav__link-green">Terms</a>
+            </div>
+        </div>
 
         <!-- logo header box -->
         <a class="logo-link" href="http://itsglennlaw.com" alt="itsGlennLaw Logo">
@@ -113,24 +130,12 @@
 
     </header>
 
-    <!-- Mobile Global menu -->
-    <div class="global-menu">
-        <div id="overlay-menu" class="global-menu__wrap">
-            <a href="/" class="global-menu__item global-menu__item--demo-3 nav__link nav__link-green">Home</a>
-            <a href="/work/" class="global-menu__item global-menu__item--demo-3 nav__link nav__link-green">Work</a>
-            <a a href="mailto:glenn@itsglennlaw.com"
-                class="global-menu__item global-menu__item--demo-3 nav__link nav__link-green">Contact</a>
-            <a href="/disclaimer/"
-                class="global-menu__item global-menu__item--demo-3 nav__link nav__link-green">Disclaimer</a>
-            <a href="/privacy/"
-                class="global-menu__item global-menu__item--demo-3 nav__link nav__link-green">Privacy</a>
-            <a href="/terms/" class="global-menu__item global-menu__item--demo-3 nav__link nav__link-green">Terms</a>
-        </div>
-    </div>
+
+
 
 
     <!-- Main are for content -->
-    <main class="main" data-barba="container" data-barba-namespace="home">
+    <main class="main">
         <section class="about__section">
             <svg class="logo__name" viewbox="0 0 222 52" fill="none" xmlns="http://www.w3.org/2000/svg" role="img"
                 aria-labelledby="uniqueTitleID">
@@ -232,7 +237,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js"
         integrity="sha384-RBb4jWnVPs9Tg/tf/x+UfQ0i99GxsUkubKG+5iuxFGZ2OdJOoGRSg0KD6Ij3qARF"
         crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/@barba/core@2.9.7/dist/barba.umd.js" crossorigin="anonymous"></script>
     <!-- custom JavaScript File -->
     <script src="/dist/all.js?cb=1611888214538" charset="utf-8"></script>
 
