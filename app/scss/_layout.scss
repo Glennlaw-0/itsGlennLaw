@@ -1,11 +1,11 @@
 body {
   height: 100%;
   min-height: 100%;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(5, 1fr);
-  grid-column-gap: 20px;
-  grid-row-gap: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-kerning: auto;
+  text-rendering: optimizeSpeed;
 }
 
 ::selection {
@@ -13,24 +13,25 @@ body {
   color: $dblue-font;
 }
 
-.header {
-  grid-area: 1 / 2 / 2 / 12;
-  display: flex;
-  justify-content: space-between;
+header.header {
+  padding-top: 20px;
 }
 
 main.main {
-  grid-area: 2 / 2 / 5 / 12;
-  display: flex;
-  justify-content: center;
+  height: 90%;
+  width: 100%;
+
+  @media #{$mq-425-up} {
+    width: 80%;
+    margin: 0 auto;
+  }
 }
 
 main.container {
-  grid-area: 2 / 2 / 5 / 12;
+  // grid-area: 2 / 1 / 5 / 13;
 }
 
 .footer {
-  grid-area: 5 / 2 / 6 / 12;
   position: relative;
   display: flex;
   justify-content: center;

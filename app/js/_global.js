@@ -1,4 +1,9 @@
 // Global
+console.log('Load Global');
+
+// Instantiating the global app object
+var app = {};
+
 app.global = {
   init: function () {
     // Load all global functions here

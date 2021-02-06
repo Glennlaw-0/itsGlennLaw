@@ -3,10 +3,12 @@
 .btn {
   border: none;
   font-family: 'fira sans', serif;
-  padding: 0.3rem 1rem;
+  font-weight: 400;
+  padding: 0.8rem 1.8rem;
   text-decoration: none;
   text-transform: uppercase;
   cursor: pointer;
+  display: inline-block;
 
   &--green {
     background-color: transparent;
@@ -29,50 +31,30 @@
       color: $dblue-font;
     }
   }
-}
-
-.hamburger {
-  padding: 15px;
-  display: inline-block;
-  color: inherit;
-  text-transform: none;
-  background: none;
-  margin: 0;
-  border: none;
-  cursor: pointer;
-  overflow: hidden;
-  -webkit-transition: all 0.15s ease-in;
-  transition: all 0.15s ease-in;
-
-  &:focus {
-    outline: $weird-font;
-  }
 
   @media #{$mq-425-up} {
-    display: none;
+    padding: 0.8rem 1.8rem;
   }
 }
 
-.hamburger__box {
-  width: 29px;
-  height: 25px;
-  display: inline-block;
-  position: relative;
-}
+button.frm__btn {
+  border: none;
+  font-family: 'fira sans', serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  padding: 1.1rem 9rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  float: right;
 
-.hamburger__inner {
-  width: 30px;
-  height: 3px;
-  display: block;
-  background-color: $white-font;
+  &--weird {
+    background-color: $neon-green;
+    color: $dblue-font;
 
-  &::after {
-    content: '';
-    width: 15px;
-    height: 3px;
-    position: absolute;
-    display: block;
-    bottom: 11px;
-    background-color: $white-font;
+    &:hover {
+      background-color: $weird-green;
+      color: $white-font;
+    }
   }
 }

@@ -28,17 +28,18 @@
 
   &__group {
     width: 100%;
-    text-align: center;
   }
 
-  &__group:nth-child(-n + 3) {
-    height: 85px;
-  }
+  // &__group:nth-child(-n + 3) {
+  //   height: 85px;
+  // }
+}
 
-  &__group:last-child {
-    text-align: right;
-    margin-top: 30px;
-  }
+.form__frame {
+  display: grid;
+  grid-template-columns: 30% 1fr;
+  grid-gap: 30px;
+  align-items: center;
 }
 
 input {
@@ -66,15 +67,13 @@ input:focus:required:valid {
 }
 
 input[type='text'] {
-  font-family: 'fira sans', sans-serif;
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: $white-font;
   border-bottom: 2px solid $white;
 }
 
 input[type='email'] {
-  font-family: 'fira sans', sans-serif;
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: $white-font;
   border-bottom: 2px solid $white;
 }
@@ -84,15 +83,20 @@ textarea {
   height: 123px;
   box-sizing: border-box;
   background-color: $dark-blue;
-  font-family: 'fira sans', sans-serif;
   color: $white-font;
-  font-size: 1.5rem;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 1rem;
   box-shadow: none;
   border: 2px solid $white;
+  resize: none;
 
   @media #{$mq-425-up} {
     height: 240px;
   }
+}
+
+textarea::placeholder {
+  color: white;
 }
 
 textarea:focus:valid {

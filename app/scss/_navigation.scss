@@ -12,6 +12,7 @@ nav {
   list-style: none;
   display: flex;
   justify-content: space-evenly;
+  display: none;
 
   @media #{$mq-620-down} {
     display: none;
@@ -22,7 +23,7 @@ nav {
 
 .global-menu {
   width: 100vw;
-  height: 90vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -36,7 +37,7 @@ nav {
 .global-menu__item {
   color: $weird-font;
   font-family: 'Fira Sans', sans-serif;
-  font-size: 1.5em;
+  font-size: 2em;
   font-weight: 400;
   opacity: 0;
   transform: translateY(-100%);
@@ -226,13 +227,25 @@ nav {
   height: 64px;
   display: block;
   cursor: pointer;
-  position: absolute;
-  top: 2.25em;
-  right: 2.25em;
+  position: relative;
   z-index: 110;
   border-radius: 50%;
   pointer-events: auto;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  padding: 15px;
+  color: inherit;
+  text-transform: none;
+  background: none;
+  margin: 0;
+  border: none;
+  overflow: hidden;
+  -webkit-transition: all 0.15s ease-in;
+  transition: all 0.15s ease-in;
+  justify-self: end;
+
+  &:focus {
+    outline: $weird-font;
+  }
 
   @media #{$mq-620-up} {
     display: none;
