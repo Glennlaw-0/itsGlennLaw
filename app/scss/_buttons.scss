@@ -1,39 +1,36 @@
 // transition: 0.5s ease-in; <--- Find a way to add this in JavaScript
 
-.btn {
+a.btn:link,
+a.btn:visited {
   border: none;
   font-family: 'fira sans', serif;
   font-weight: 400;
   padding: 0.8rem 1.8rem;
+  border-radius: 999px;
   text-decoration: none;
   text-transform: uppercase;
   cursor: pointer;
   display: inline-block;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
 
-  &--green {
-    background-color: transparent;
-    border: 3px $weird-green solid;
-    color: $white-font;
+a.btn--neon {
+  background-color: rgba(191, 233, 158, 1);
+  color: rgba(255, 255, 255, 1);
 
-    &:hover {
-      background-color: $neon-green;
-      color: $weird-font;
-    }
+  &:hover {
+    background-color: rgb(181, 241, 135);
+    box-shadow: 0px 3px 15px rgba(191, 233, 158, 0.6);
   }
+}
 
-  &--white {
-    background-color: transparent;
-    border: 3px $white solid;
-    color: $weird-font;
+a.btn--green {
+  background-color: rgba(55, 176, 136, 1);
+  color: rgba(255, 255, 255, 1);
 
-    &:hover {
-      background-color: $neon-green;
-      color: $dblue-font;
-    }
-  }
-
-  @media #{$mq-425-up} {
-    padding: 0.8rem 1.8rem;
+  &:hover {
+    background-color: rgb(35, 175, 128);
+    box-shadow: 0px 3px 15px rgba(35, 175, 128, 0.6);
   }
 }
 
@@ -42,11 +39,11 @@ button.frm__btn {
   font-family: 'fira sans', serif;
   font-weight: 400;
   font-size: 1.2rem;
-  padding: 1.1rem 9rem;
+  padding: 1.1rem 1.8rem;
+  border-radius: 999px;
   text-decoration: none;
   text-transform: uppercase;
   cursor: pointer;
-  float: right;
 
   &--weird {
     background-color: $neon-green;
