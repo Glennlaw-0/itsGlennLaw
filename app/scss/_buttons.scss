@@ -84,49 +84,48 @@ button.closeButton {
   line-height: 90px;
   outline: none;
   overflow: hidden;
-  padding: 10px 0 0;
+  // padding: 10px 0 0;
   position: absolute;
   text-transform: uppercase;
-  top: 25px;
+  top: 27px;
   right: 48px;
   // transform: translate(-50%, -50%);
   transition: all 0.2s ease-in;
-  width: 20px;
-  height: 20px;
+  width: 33px;
+  height: 33px;
   z-index: 6;
 }
 
 button.closeButton::before,
 button.closeButton::after {
   background-color: white;
-  content: '\00d7';
-  color: #37b088;
+  content: '';
   display: block;
   height: 1px;
-  left: 0;
   position: absolute;
   transform-origin: center left;
   transition: all 0.2s ease-in;
   width: 100%;
   z-index: -1;
+  left: 5px;
 }
 
 button.closeButton::before {
-  top: 0;
+  top: 4px;
   transform: rotate(45deg);
 }
 
 button.closeButton::after {
-  bottom: 0;
+  bottom: 4px;
   transform: rotate(-45deg);
 }
 
 button.closeButton:hover {
-  color: #8a2387;
+  border-radius: 99px;
+  background-color: $white;
 }
 
-button.closeButton:hover::before,
-button.closeButton:hover::after {
-  height: 54px;
-  transform: rotate(0deg);
+button.closeButton:hover:before,
+button.closeButton:hover:after {
+  background-color: $dblue-font;
 }
