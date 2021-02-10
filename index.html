@@ -132,45 +132,80 @@
     <div class="bg-modal">
         <div class="modal-contents">
 
-            <div class="close">+</div>
-
-            <article>
-                <h2 class="about__title section__title-small section__title-small-white">Want to reach me?</h2>
-                <p>Contact me to hire me for work or a free consultation.</p>
-            </article>
+            <button class="closeButton">Close</button>
 
 
+            <h2 class="form__title section__title-medium-white ">Contact Me</h2>
 
-            <form accept-charset="UTF-8" id="form__frame" class="form__frame"
-                action="https://getform.io/f/46320a04-e535-47e0-9b7e-985894539c0a" method="POST" enctype="text/plain">
+            <form accept-charset="UTF-8" id="form__frame" class="form__frame contact3-form validate-form" method="POST"
+                enctype="text/plain">
+
+                <div class="wrap-contact3-form-radio">
+                    <div class="contact3-form-radio">
+                        <input class="input__radio" id="radio1" type="radio" name="choice" value="say-hi"
+                            checked="checked">
+                        <label class="label__radio" for="radio1">
+                            Say Hi
+                        </label>
+                    </div>
+
+                    <div class="contact3-form-radio">
+                        <input class="input__radio" id="radio2" type="radio" name="choice" value="get-quote">
+                        <label class="label__radio" for="radio2">
+                            Get a Quote
+                        </label>
+                    </div>
+                </div>
+
+
                 <div class="form__inputs">
-                    <div class="form__group">
-                        <input type="text" placeholder="First Name*" id="firstName" name="firstName" required />
+                    <div class="form__group validate-input" data-validate="Name is required">
+                        <input class="input__element" type="text" placeholder="Your Name*" id="firstName" name="name" />
+                        <span class="focus__input"></span>
                     </div>
 
-                    <div class="form__group">
-                        <input type="text" placeholder="Last Name*" id="lastName" name="lastName" required />
-                    </div>
-
-                    <div class="form__group">
-                        <input type="email" placeholder="Email Address*" id="email" name="email" required />
-                    </div>
-
-                    <div class="form__group">
-                        <input type="text" placeholder="Subject*" id="subject" name="subject" required />
-                    </div>
-                </div>
-
-                <div class="form__message">
-                    <div class="">
-                        <textarea placeholder="Message*" id="message" name="message" required></textarea>
-                    </div>
-                    <div class="">
-                        <button type="submit" class="frm__btn frm__btn--weird">Send</button>
+                    <div class="form__group validate-input" data-validate="Valid email is required: ex@abc.xyz">
+                        <input class="input__element" type="email" placeholder="Your Email*" id="email" name="email" />
+                        <span class="focus__input"></span>
                     </div>
                 </div>
 
 
+                <div class="form__group input__select closed">
+                    <div class="select__container">
+                        <label class="label__select" for="select__service">Needed Services</label>
+                        <select id="select__service" name="service">
+                            <option value="eCommerce Business">Web Development</option>
+                            <option value="eCommerce Business">Mobile Development</option>
+                            <option value="UI/UX Design">UI/UX Design</option>
+                            <option value="Online Services">Online Services</option>
+                        </select>
+                        <span class="custom__arrow"></span>
+                    </div>
+                    <span class="focus__input"></span>
+                </div>
+
+                <div class="form__group input__select closed">
+                    <div class="select__container">
+                        <label class="label__select" for="select__budget">Budget</label>
+                        <select id="select__budget" name="budget">
+                            <option value="1500">$1500</option>
+                            <option value="2000">$2000</option>
+                            <option value="3000">$3000</option>
+                        </select>
+                        <span class="custom__arrow"></span>
+                    </div>
+                    <span class="focus__input"></span>
+                </div>
+
+                <div class="form__group validate-input" data-validate="Message is required">
+                    <textarea class="input__element" placeholder="Your message*" id="message" name="message"></textarea>
+                    <span class="focus__input"></span>
+                </div>
+
+                <div class="form__button">
+                    <button type="submit" class="frm__btn frm__btn--white">Send</button>
+                </div>
             </form>
         </div>
     </div>
@@ -232,14 +267,14 @@
                     </div>
                     <br>
                     <div class="about__buttons">
-                        <a href="#" class="btn btn--neon" rel="noreferrer">Contact Me</a>
+                        <a href="#" class="btn btn--neon" id="contact" rel="noreferrer">Contact Me</a>
                         <a href="/resume/Glenn law Tech Resume.pdf" class="btn btn--green" target="_blank"
                             rel="noreferrer">Resume</a>
                     </div>
 
                     <section class="social__pack">
                         <div class="social__platforms">
-                            <a href="https://www.twitter.com/itsglennlaw" target="_blank rel=" noreferrer""><img
+                            <a href="https://www.twitter.com/itsglennlaw" target="_blank" rel="noreferrer"><img
                                     src="/dist/imgs/socialpack/Twitter.svg" class="svg social__link"
                                     alt="Glenn Law's Twitter Page" /></a>
 
@@ -256,25 +291,12 @@
                                     alt="Glenn Law's Github Page" /></a>
                         </div>
                     </section>
-                    <!-- 
-                <br>
-                <div class="about__stack">
-                    <h2 class="about__LT section__title-small section__title-small-weird">Tech</h2>
-                    <ul class="about__list">
-                        <li class="list__item">Figma</li>
-                        <li class="list__item">Javascript</li>
-                        <li class="list__item">React</li>
-                        <li class="list__item">GSAP</li>
-                        <li class="list__item">Bootstrap</li>
-                        <li class="list__item">SASS</li>
-                    </ul>
-                </div> -->
                 </article>
             </div>
 
             <div>
                 <div class="project__content">
-                    <p>Here</p>
+
                 </div>
             </div>
 
@@ -286,12 +308,12 @@
     </main>
 
     <footer class="footer">
-
+        <p>itsGlennLaw © 2021 All Rights Reserved.</p>
     </footer>
 
 
     <!-- custom JavaScript File -->
-    <script src="/dist/all.js?cb=1612637185254" charset="utf-8"></script>
+    <script src="/dist/all.js?cb=1612916992284" charset="utf-8"></script>
 
 
 </body>

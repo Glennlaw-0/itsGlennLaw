@@ -1,26 +1,14 @@
-var form = document.getElementById('form__frame');
-
-function formSubmit(e) {
-  e.preventDefault();
-
+function formSubmit() {
   const formData = new FormData();
-  formData.append(
-    'First Name',
-    document.querySelector('input[name="firstName"]').value
-  );
-  formData.append(
-    'Last Name',
-    document.querySelector('input[name="lastName"]').value
-  );
+  formData.append('Name', document.querySelector('input[name="name"]').value);
   formData.append('Email', document.querySelector('input[name="email"]').value);
-  formData.append(
-    'Subject',
-    document.querySelector('input[name="subject"]').value
-  );
+
   formData.append(
     'Message',
     document.querySelector('textarea[name="message"]').value
   );
+
+  form.reset();
 
   fetch('https://getform.io/f/46320a04-e535-47e0-9b7e-985894539c0a', {
     method: 'POST',
@@ -28,8 +16,4 @@ function formSubmit(e) {
   })
     .then((response) => console.log(response))
     .catch((error) => console.log(error));
-
-  form.reset();
 }
-
-form.addEventListener('submit', formSubmit);

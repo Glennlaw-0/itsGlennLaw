@@ -28,7 +28,7 @@
 
 .section__title-medium {
   font-family: 'fira sans', sans-serif;
-  font-size: 2rem;
+  font-size: 1.7rem;
 
   &-white {
     color: $white-font;
@@ -47,11 +47,7 @@
   }
 
   @media #{$mq-425-up} {
-    font-size: 2.5rem;
-  }
-
-  @media #{$mq-760-up} {
-    font-size: 3.5rem;
+    font-size: 2rem;
   }
 }
 
@@ -76,10 +72,6 @@
   }
 
   @media #{$mq-425-up} {
-    font-size: 3.5rem;
-  }
-
-  @media #{$mq-760-up} {
-    font-size: 5.5rem;
+    font-size: 3rem;
   }
 }

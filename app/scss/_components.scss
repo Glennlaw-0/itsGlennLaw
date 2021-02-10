@@ -54,6 +54,7 @@
 }
 
 .about__story {
+  padding: 30px;
   @media #{$mq-425-up} {
     align-self: center;
     height: 69%;
@@ -79,7 +80,11 @@
 }
 
 .about__buttons {
-  height: 100px;
+  height: 64px;
+
+  @media #{$mq-425-up} {
+    height: 100px;
+  }
 }
 
 .about__list {

@@ -107,6 +107,16 @@ class ShapeOverlays {
   const gNavItems = document.querySelectorAll('.global-menu__item');
   const elmOverlay = document.querySelector('.shape-overlays');
   const overlay = new ShapeOverlays(elmOverlay);
+  const contactButton = document.getElementById('contact');
+  const closeButton = document.querySelector('.closeButton');
+
+  contactButton.addEventListener('click', function () {
+    document.querySelector('.bg-modal').style.display = 'flex';
+  });
+
+  closeButton.addEventListener('click', function () {
+    document.querySelector('.bg-modal').style.display = 'none';
+  });
 
   elmHamburger.addEventListener('click', () => {
     if (overlay.isAnimating) {
