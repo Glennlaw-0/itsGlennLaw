@@ -1,7 +1,13 @@
 function formSubmit() {
+  const radioButtons = document.querySelectorAll('.input__radio');
+  
   const formData = new FormData();
   formData.append('Name', document.querySelector('input[name="name"]').value);
   formData.append('Email', document.querySelector('input[name="email"]').value);
+
+  radioButtons.forEach((inputRadio) => {
+
+  })
 
   formData.append(
     'Message',

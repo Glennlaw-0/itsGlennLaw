@@ -38,21 +38,13 @@
 
 body {
   font-family: 'Fira Sans', sans-serif;
-  font-weight: 200;
+  font-weight: 400;
+  font-size: 100%;
   line-height: 1.4;
-  color: $weird-font;
+  color: $white-font;
   // -webkit-font-smoothing: antialiased;
 }
 
-P,
-.list__item {
-  font-size: 1rem;
-
-  @media #{$mq-425-up} {
-    font-size: 1rem;
-  }
-
-  @media #{$mq-760-up} {
-    font-size: 1.5rem;
-  }
+p {
+  font-weight: 200;
 }

@@ -113,46 +113,29 @@ input::-webkit-input-placeholder {
   /* Webkit */
   color: rgba(255, 255, 255, 0.8);
 }
-input:-moz-placeholder {
+input::-moz-placeholder {
   /* Firefox 18-4 */
   color: rgba(255, 255, 255, 0.8);
 }
-input::-moz-placeholder {
-  /* Firefox 19+ */
-  color: rgba(255, 255, 255, 0.8);
-}
-input:-ms-input-placeholder {
-  /*  IE10+  */
-  color: rgba(255, 255, 255, 0.8);
-}
+
 textarea::-webkit-input-placeholder {
   /* Webkit */
   color: rgba(255, 255, 255, 0.8);
 }
-textarea:-moz-placeholder {
+textarea::-moz-placeholder {
   /* Firefox 18-4 */
   color: rgba(255, 255, 255, 0.8);
 }
-textarea::-moz-placeholder {
-  /* Firefox 19+ */
-  color: rgba(255, 255, 255, 0.8);
-}
-textarea:-ms-input-placeholder {
-  /*  IE10+  */
+
+select::-webkit-input-placeholder {
+  /* Webkit */
   color: rgba(255, 255, 255, 0.8);
 }
 select:-moz-placeholder {
   /* Firefox 18-4 */
   color: rgba(255, 255, 255, 0.8);
 }
-select::-moz-placeholder {
-  /* Firefox 19+ */
-  color: rgba(255, 255, 255, 0.8);
-}
-select:-ms-input-placeholder {
-  /*  IE10+  */
-  color: rgba(255, 255, 255, 0.8);
-}
+
 /*=============================================================*/
 // Form layout
 

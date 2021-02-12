@@ -7,14 +7,7 @@
 }
 
 html {
-  font-size: 0.9rem;
-  //1 rem = 10px; 10px/16px = 62.5%
-  box-sizing: border-box;
   background: $background-color;
   height: 100%;
   min-height: 100%;
-
-  @media #{$mq-425-up} {
-    font-size: 1.1rem;
-  }
 }

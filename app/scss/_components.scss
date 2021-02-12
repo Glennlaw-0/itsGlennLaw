@@ -1,136 +1,55 @@
-//Header & content inside
-
-.logo-link {
-  height: 63px;
-  width: 63px;
-  position: relative;
-  display: block;
-
-  @media #{$mq-760-up} {
-    display: block;
-    width: 75px;
-    height: 75px;
-  }
-}
-
-.logo__icon {
-  min-width: 100%;
-  max-width: 100%;
-}
-
-.logo__name {
-  width: 42%;
-
-  @media #{$mq-425-up} {
-    width: 50%;
-  }
-}
+// ------------------------------------------------
 
 // ------------------------------------------------
 
 // sub header
 .sub__header {
   max-width: 80%;
-  display: grid;
-  grid-template-columns: 1fr auto 1fr;
+  display: flex;
   margin: 0 auto;
   align-items: center;
+  justify-content: space-between;
 }
+
+.logo__box {
+  position: relative;
+}
+
+.logo__name {
+  height: 3rem;
+  width: 10rem;
+}
+
+// ------------------------------------------------
 
 // section About
 
 .about__section {
-  color: $white-font;
   position: relative;
   height: 100%;
   width: 100%;
-
-  @media #{$mq-425-up} {
-    max-height: 94%;
-    max-width: 100%;
-    display: grid;
-    grid-template-columns: 50% 50%;
-  }
+  display: grid;
+  grid-template-columns: 40% 60%;
 }
 
 .about__story {
-  padding: 30px;
-  @media #{$mq-425-up} {
-    align-self: center;
-    height: 69%;
-  }
+  align-self: center;
+  height: 70%;
 }
 
 .about__content {
   width: 100%;
   margin-top: 10px;
-
-  @media #{$mq-425-up} {
-    height: 100%;
-    padding: 0;
-  }
 }
 
 .about__text {
-  @media #{$mq-425-up} {
-    width: 90%;
-    line-height: 1.7;
-    letter-spacing: 0.044em;
-  }
+  width: 90%;
+  line-height: 1.7;
+  letter-spacing: 0.044em;
 }
 
 .about__buttons {
   height: 64px;
-
-  @media #{$mq-425-up} {
-    height: 100px;
-  }
-}
-
-.about__list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  list-style-position: inside;
-}
-
-.list__item {
-  list-style: none;
-}
-
-// ------------------------------------------------
-// Section Contact
-
-.consultation__section {
-  color: $white-font;
-  position: relative;
-  display: flex;
-  height: 100%;
-  width: 100%;
-  flex-direction: column;
-
-  @media #{$mq-425-up} {
-    flex-direction: row;
-    align-items: center;
-  }
-}
-
-.consultation__content {
-  @media #{$mq-425-up} {
-    height: 100%;
-    width: 70%;
-  }
-}
-
-.consultation__text {
-  @media #{$mq-425-up} {
-    padding-top: 65px;
-    width: 80%;
-  }
-
-  @media #{$mq-425-down} {
-    display: none;
-  }
 }
 
 // ------------------------------------------------
@@ -273,7 +192,3 @@
 }
 
 //======================
-
-.temp {
-  @include absCenter;
-}
