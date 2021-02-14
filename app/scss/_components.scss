@@ -31,8 +31,9 @@
   display: grid;
   grid-template-columns: 40% 60%;
 
-  @media #{$mq-425-down} {
+  @media #{$mq-620-down} {
     display: block;
+    padding-top: 30px;
   }
 }
 
@@ -49,7 +50,7 @@
   width: 100%;
   margin-top: 10px;
 
-  @media #{$mq-760-up} {
+  @media #{$mq-900-up} {
     font-size: 147%;
   }
 }
