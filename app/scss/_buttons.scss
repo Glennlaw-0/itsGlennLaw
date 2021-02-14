@@ -40,30 +40,22 @@ button.frm__btn {
   font-family: 'fira sans', serif;
   font-weight: 400;
   font-size: 1.2rem;
-  padding: 0.3rem 1.8rem;
+  padding: 0.3rem 1rem;
   text-decoration: none;
   text-transform: uppercase;
   display: inline-block;
   text-align: right;
+  transition: 0.4s;
   cursor: pointer;
-  &--green {
-    background-color: rgba(55, 176, 136, 1);
-    color: rgba(255, 255, 255, 1);
-
-    &:hover {
-      background-color: rgb(35, 175, 128);
-      box-shadow: 0px 3px 15px rgba(35, 175, 128, 0.6);
-    }
-  }
 
   &--white {
-    background-color: rgba(255, 255, 255, 1);
-    color: rgba(55, 176, 136, 1);
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 1);
+    color: $white-font;
 
     &:hover {
       background-color: rgba(255, 255, 255, 1);
-      box-shadow: 0px 3px 15px rgba(229, 255, 217, 0.6);
-      cursor: pointer;
+      color: $dblue-font;
     }
   }
 }

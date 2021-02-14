@@ -30,16 +30,28 @@
   width: 100%;
   display: grid;
   grid-template-columns: 40% 60%;
+
+  @media #{$mq-425-down} {
+    display: block;
+  }
 }
 
 .about__story {
   align-self: center;
-  height: 70%;
+
+  @media #{$mq-425-down} {
+    margin: 0 auto;
+    width: 80%;
+  }
 }
 
 .about__content {
   width: 100%;
   margin-top: 10px;
+
+  @media #{$mq-760-up} {
+    font-size: 147%;
+  }
 }
 
 .about__text {

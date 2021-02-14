@@ -226,26 +226,6 @@
   }
 }
 
-// .hamburger::after {
-//   width: 64px;
-//   height: 64px;
-//   box-sizing: border-box;
-//   content: '';
-//   display: block;
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   pointer-events: none;
-//   border: 4px solid $white;
-//   border-radius: 50%;
-//   -webkit-animation-duration: 1.2s;
-//   animation-duration: 1.2s;
-//   -webkit-animation-name: intervalHamburgerBorder;
-//   animation-name: intervalHamburgerBorder;
-//   -webkit-animation-iteration-count: infinite;
-//   animation-iteration-count: infinite;
-// }
-
 .hamburger__line {
   width: 28px;
   height: 2px;
