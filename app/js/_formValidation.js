@@ -65,7 +65,8 @@
     }
 
     if (check === true) {
-      console.log('email sent');
+      formSubmit();
+      form.reset();
     } else {
       console.log('email not sent');
     }

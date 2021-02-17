@@ -8,9 +8,9 @@
   position: absolute;
   justify-content: center;
   align-items: center;
-  z-index: 100;
   background-color: rgba(0, 0, 0, 0.9);
   transition: all 0.4s;
+  z-index: 111;
 }
 
 .modal-contents {
@@ -26,6 +26,11 @@
   justify-content: center;
   align-items: center;
   position: relative;
+
+  @media #{$mq-620-down} {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 /*=============================================================*/
@@ -40,6 +45,11 @@
   justify-content: end;
   align-items: center;
   height: 510px;
+
+  @media #{$mq-620-down} {
+    display: block;
+    padding-top: 30px;
+  }
 }
 
 .form__group {
@@ -83,7 +93,6 @@ select::placeholder {
 textarea.input__element {
   min-height: 70px;
   padding: 1rem 0;
-  width: 30rem;
 }
 
 .input__element:focus {
