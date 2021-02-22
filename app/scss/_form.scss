@@ -1,6 +1,6 @@
 // MODAL STARTS HERE //
 
-.bg-modal {
+.contact__popup {
   top: 0;
   width: 100%;
   height: 100%;
@@ -13,7 +13,7 @@
   z-index: 111;
 }
 
-.modal-contents {
+.contact__contents {
   width: 62rem;
   height: 38rem;
   background-color: $dark-gray;
@@ -44,7 +44,7 @@
   flex-direction: column;
   justify-content: end;
   align-items: center;
-  height: 510px;
+  // height: 510px;
 
   @media #{$mq-620-down} {
     display: block;
@@ -130,8 +130,9 @@ textarea.input__element {
   background: #fff;
 }
 
-/*==================================================================
-[ Restyle Radio ]*/
+/*=============================================================*/
+// [Restyle Radio]*/
+
 .wrap-contact3-form-radio {
   display: flex;
   flex-wrap: wrap;
@@ -207,8 +208,8 @@ textarea.input__element {
   left: -4px;
 }
 
-/*==================================================================
-[ Input__element select ]*/
+/*=============================================================*/
+// [Input__element select]*/
 
 .input__select {
   overflow-y: hidden;
@@ -224,8 +225,8 @@ textarea.input__element {
   margin-bottom: 27px;
 }
 
-/*------------------------------------------------------------------
-[ Alert validate ]*/
+/*=============================================================*/
+// [Alert validate]*/
 
 .validate-input {
   position: relative;
@@ -290,8 +291,8 @@ textarea.input__element {
   }
 }
 
-/*//////////////////////////////////////////////////////////////////
-[ Restyle Select2 ]*/
+/*=============================================================*/
+//[Restyle Select2]*/
 
 .select2-container {
   display: block;
@@ -313,8 +314,9 @@ textarea.input__element {
   position: relative;
 }
 
-/*//////////////////////////////////////////////////////////////////
+/*=============================================================*/
 /* in select */
+
 select {
   padding: 0.5em 0em;
   background-color: transparent;
@@ -362,8 +364,8 @@ select {
 //   border-top: var(--size) solid rgba(255, 255, 255, 0.5);
 // }
 
-/*------------------------------------------------------------------
-[ Alert validate ]*/
+/*=============================================================*/
+// [Alert validate]*/
 
 .validate-input {
   position: relative;
