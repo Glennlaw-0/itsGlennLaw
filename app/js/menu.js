@@ -102,37 +102,35 @@ class ShapeOverlays {
   }
 }
 
-(function () {
-  const elmHamburger = document.querySelector('.hamburger');
-  const gNavItems = document.querySelectorAll('.global-menu__item');
-  const elmOverlay = document.querySelector('.shape-overlays');
-  const overlay = new ShapeOverlays(elmOverlay);
-  const contactButton = document.getElementById('contact');
-  const closeButton = document.querySelector('.closeButton');
+const elmHamburger = document.querySelector('.hamburger');
+const gNavItems = document.querySelectorAll('.global-menu__item');
+const elmOverlay = document.querySelector('.shape-overlays');
+const overlay = new ShapeOverlays(elmOverlay);
+const contactButton = document.getElementById('contact');
+const closeButton = document.querySelector('.closeButton');
 
-  contactButton.addEventListener('click', function () {
-    document.querySelector('.bg-modal').style.display = 'flex';
-  });
+contactButton.addEventListener('click', function () {
+  document.querySelector('.contact__popup').style.display = 'flex';
+});
 
-  closeButton.addEventListener('click', function () {
-    document.querySelector('.bg-modal').style.display = 'none';
-  });
+closeButton.addEventListener('click', function () {
+  document.querySelector('.contact__popup').style.display = 'none';
+});
 
-  elmHamburger.addEventListener('click', () => {
-    if (overlay.isAnimating) {
-      return false;
+elmHamburger.addEventListener('click', function () {
+  if (overlay.isAnimating) {
+    return false;
+  }
+  overlay.toggle();
+  if (overlay.isOpened === true) {
+    elmHamburger.classList.add('is-opened-navi');
+    for (var i = 0; i < gNavItems.length; i++) {
+      gNavItems[i].classList.add('is-opened');
     }
-    overlay.toggle();
-    if (overlay.isOpened === true) {
-      elmHamburger.classList.add('is-opened-navi');
-      for (var i = 0; i < gNavItems.length; i++) {
-        gNavItems[i].classList.add('is-opened');
-      }
-    } else {
-      elmHamburger.classList.remove('is-opened-navi');
-      for (var i = 0; i < gNavItems.length; i++) {
-        gNavItems[i].classList.remove('is-opened');
-      }
+  } else {
+    elmHamburger.classList.remove('is-opened-navi');
+    for (var i = 0; i < gNavItems.length; i++) {
+      gNavItems[i].classList.remove('is-opened');
     }
-  });
-})();
+  }
+});
